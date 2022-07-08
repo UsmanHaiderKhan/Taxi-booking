@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'gr-pro';
+    src: url('../font/Geomanist-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'gb-pro';
+    src: url('../font/Geomanist-Bold.ttf') format('opentype');
+}
+
+#top-nav {
+    background-color: #D0CEEB;
+    padding: 15px 36px 0px 90px;
+}
+.img-icon{
+    width: 20px;
+    height: 20px;
+}
+.vertical-line {
+    border-right: 1px solid #181458;
+}
+
+    .vertical-line:after {
+        content: '';
+        height: 100%;
+        padding: 24px;
+    }
+
+.sleep {
+    padding: 15px 100px 15px 100px;
+    transition: all .4s ease-in-out;
+}
+
+
+
+
+.mail-style {
+    color: #181458;
+
+    text-decoration: none;
+}
+
+    .mail-style:hover {
+        color: #181458;
+        text-decoration: none;
+    }
+
+.email-text {
+    color: #181458;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'gr-pro';
+}
+
+.phone-number-text {
+    color: #181458;
+    font-size: 15px;
+    font-family: 'gr-pro';
+}
+/*  */
+.nav-item{
+    padding: 10px 25px;
+}
+.nav-link{
+    font-size: 16px;
+    color:#18145880;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+/* Home page styling */
+
+#home{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/home/background.svg');
+}
+#home .main-heading-desc{
+    font-size: 17px;
+    color: #181458;
+    font-weight: 400;
+    font-family: 'gr-pro'
+}
+
+#home .main-heading{
+    font-size: 50px;
+    color: #181458;
+    font-weight: bold;
+    font-family: 'gb-pro'
+}
+#home .main-desc{
+    font-size: 28px;
+    color: #181458;
+    font-weight: 400;
+    font-family: 'gr-pro'
+}
+#home .img-color{
+    filter: grayscale(100%);
+}
+#home .color-text{
+    color: #F12797;
+}
