@@ -30,9 +30,6 @@
     transition: all .4s ease-in-out;
 }
 
-
-
-
 .mail-style {
     color: #181458;
 
@@ -56,7 +53,11 @@
     font-size: 15px;
     font-family: 'gr-pro';
 }
-/*  */
+/* Navbar */
+nav{
+    z-index: 999;
+}
+
 .nav-item{
     padding: 10px 25px;
 }
@@ -75,6 +76,10 @@
 #home{
     width: 100%;
     height: auto;
+    position: relative;
+    top: -75px;
+    padding: 203px 0 160px 0;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../images/home/background.svg');
@@ -104,3 +109,78 @@
 #home .color-text{
     color: #F12797;
 }
+
+/* Media Quries */
+
+/*================ Media Query ===============*/
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1367px) {}
+
+@media screen and (max-width: 1024px) {
+
+    #top-nav {
+        padding: 15px 36px 14px 90px; 
+    }  
+     .navbar-toggler-icon {
+        border-radius: 6px;
+        border: 1px solid #000000 !important;
+    }
+    #home .main-heading{
+        font-size: 32px;
+    } 
+    #home .main-heading-desc {
+        font-size: 14px;
+    }
+    #home .main-desc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 769px) {}
+
+@media screen and (max-width: 475px) {
+    .vertical-line:after {
+        content: '';
+        height: 100%;
+        padding: 15px;
+    }
+    .email-text {
+        font-size: 12px;
+    }
+    .phone-number-text{
+     font-size: 12px;
+    }
+    .img-icon{
+        width: 15px;
+        height: 15px;
+    }
+   
+}
+
+@media screen and (max-width: 412px) {}
+
+@media screen and (max-width: 376px) {}
+
+@media screen and (max-width: 361px) {}
+
+
+
+/*==================== Media Query For Land Scape Mode =====================*/
+@media screen and (max-width: 1500px) and (orientation: landscape) {}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {}
+
+@media screen and (max-width: 824px) and (orientation: landscape) {}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {}
+
+@media screen and (max-width: 732px) and (orientation: landscape) {}
+
+@media screen and (max-width: 668px) and (orientation: landscape) {}
+
+@media screen and (max-width: 641px) and (orientation: landscape) {}
