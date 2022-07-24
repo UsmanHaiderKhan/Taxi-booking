@@ -6,10 +6,14 @@
     font-family: 'gb-pro';
     src: url('../font/Geomanist-Bold.ttf') format('opentype');
 }
+p,body{
+    padding: 0;
+    margin: 0;
+}
 
 #top-nav {
     background-color: #D0CEEB;
-    padding: 15px 36px 0px 90px;
+    padding: 15px 36px 13px 90px;
 }
 .img-icon{
     width: 20px;
@@ -109,6 +113,90 @@ nav{
 #home .color-text{
     color: #F12797;
 }
+/* Styling for tab view */
+#ticket-form{
+    margin-top: -151px;
+}
+.text-from{
+    font-size: 16px;
+    color: #18145899;
+    margin: 0;
+    font-family: 'gb-pro';
+    text-transform: capitalize;
+}
+.desc-text{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'gr-pro';
+}
+.date{
+    font-size: 38px;
+    color: #181458;
+    margin: 0;
+    font-family: "gb-pro";
+}
+.datetime-text{
+    font-size: 14px;
+    color: #181458;
+    font-family: "gr-pro";
+}
+.return-button{
+width: 100%;
+height: 47px;
+color: rgba(24, 20, 88, 0.6);
+background: #FFFFFF;
+border: 1px solid #DCDCEA;
+border-radius: 4px;
+font-family: 'gr-pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+text-transform: capitalize;
+}
+#ticket-form .card{
+    border-radius: 10px;
+    border: none;
+}
+ .nav-tabs .nav-link {
+    border:none;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+#myTab .active{
+   color: #4699FB;
+   position: relative;
+}
+#myTab .active img{
+    filter: drop-shadow(0px 0px 2px #4444dd); 
+}
+
+#myTab .active::after{
+    content: '';
+    left: 0;
+    width: 100%;
+    bottom: -11.4px;
+    position: absolute;
+    border-radius: 12px;
+    border-bottom: 4px solid #4699FB;
+}
+.left-border{
+    height: 80px;
+    border-left:1.6px solid #DCDCEA;
+}
+
+/* .media{
+    position: relative;
+}
+.media::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid #181458;
+} */
 
 /* Media Quries */
 
@@ -116,11 +204,16 @@ nav{
 @media screen and (max-width: 1500px) {}
 
 @media screen and (max-width: 1367px) {}
+@media screen and (max-width: 1250px) {
+    .nav-item {
+        padding: 10px 10px;
+    }
+}
 
 @media screen and (max-width: 1024px) {
 
     #top-nav {
-        padding: 15px 36px 14px 90px; 
+        padding: 15px 36px 26px 90px; 
     }  
      .navbar-toggler-icon {
         border-radius: 6px;
