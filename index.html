@@ -9,11 +9,6 @@
     <!-- <link rel="stylesheet" href="assets/font/flaticon.css" /> -->
     <!--build:css assets/css/styles.min.css -->
     <link rel="stylesheet" href="assets/css/vendor/boostrap.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/LightBox/dist/css/lightbox.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- endbuild -->
@@ -103,14 +98,127 @@
             </div>
         </div>
     </section>
+    <section id="ticket-form">
+        <div class="container">
+            <div class="card shadow-lg">
+                <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="onway-tab" data-toggle="tab" href="#onway" role="tab"
+                            aria-controls="onway" aria-selected="true">
+                            <img src="./assets/images/icons/enabled.png" alt="">
+                            One way
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="return-tab" data-toggle="tab" href="#return" role="tab"
+                            aria-controls="return" aria-selected="false">
+                            <img src="./assets/images/icons/enabled.png" alt="">
+                            Return
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active pt-3 pb-3" id="onway" role="tabpanel"
+                        aria-labelledby="onway-tab">
+                        <div class="container-fluid">
+                            <div class="row align-content-center p-4">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                                    <div class="media">
+                                        <img class="mr-3 mt-3" src="./assets/images/icons/travel-location.png"
+                                            class="img-responsive" alt="traveling image">
+                                        <div class="media-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="text-from">From</h5>
+                                                    <p class="desc-text mt-3">London Luton Airport (LTN)</p>
+                                                </div>
+                                                <div class="ml-3 mt-2">
+                                                    <img src="./assets/images/icons/Path.svg" class="small-icons"
+                                                        alt="">
+                                                    <br>
+                                                    <img src="./assets/images/icons/Mask.png" class="small-icons"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mt-3 left-border">
+                                    <div class="media">
+                                        <img class="mr-3 mt-3" src="./assets/images/icons/travel-location.png"
+                                            class="img-responsive" alt="traveling image">
+                                        <div class="media-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="text-from">To</h5>
+                                                    <p class="desc-text mt-3">London Luton Airport (LTN)</p>
+                                                </div>
+                                                <div class="ml-3 mt-2">
+                                                    <img src="./assets/images/icons/Path.svg" class="small-icons"
+                                                        alt="">
+                                                    <br>
+                                                    <img src="./assets/images/icons/Mask.png" class="small-icons"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mt-3 left-border">
+                                    <h5 class="text-from">Dates - Time</h5>
+                                    <div class="d-flex align-items-center">
+                                        <h2 class="date">23</h2>
+                                        <div class="ml-2">
+                                            <p class="datetime-text">September</p>
+                                            <p class="datetime-text" style="color: #18145899;">Wed, 13:00</p>
+                                        </div>
+                                        <div>
+                                            <button class="btn return-button ml-3">Add Return</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mt-3 left-border">
+                                    <div class="media">
+                                        <img class=" mr-3 mt-4" src="./assets/images/icons/users.png"
+                                            class="img-responsive" alt="traveling image">
+                                        <div class="media-body">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h5 class="text-from">Pessenger</h5>
+                                                    <p class="desc-text mt-3">1 Person</p>
+                                                </div>
+                                                <div class="ml-3 mt-2">
+                                                    <button class="btn btn-primary"><img
+                                                            src="./assets/images/icons/Vector.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="return" role="tabpanel" aria-labelledby="return-tab">
+                        <div class="container">
+                            <div class="row p-4 justify-content-center">
+                                <div class="col-lg-12">
+                                    <h1 class="text-center">Return Tab</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-5 mt-5"></section>
+
 
     <!-- Script Section -->
     <!--build:js assets/js/main.min.js -->
     <script src="assets/js/vendor/jquery.min.js"></script>
-    <script src="assets/js/vendor/poper.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/owl.carousel.min.js"></script>
-    <script src="assets/js/vendor/smoothscroll.js"></script>
-    <script src="assets/LightBox/dist/js/lightbox.min.js"></script>
+    <script src="assets/js/vendor/poper.min.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- endbuild -->
